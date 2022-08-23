@@ -1,13 +1,10 @@
-
-void setup(){
-  //some of your code here
-  size(500,500);
-  background(184,244,255);
+void setup() {
+size(500,500);
+background(184,244,255);
 }
 
 void draw(){
-  //more of your code here
-  //ears
+//ears
 fill(255,0,0);
 rotate(0.8);
 //stroke(0,0,0);
@@ -54,14 +51,29 @@ ellipse(285,188,25,40);
 fill(0,0,0);
 ellipse(210,188,10,20);
 ellipse(285,188,10,20);
-
-
 resetMatrix();
 
 //hair
 noFill();
+stroke(0,0,0);
+//right brow
+line(273,135,293,138);
+line(293,138,271,141);
+line(271,141,298,144);
+line(298,144,273,147);
+//leftbrow
+line(224,134,198,146);
+
+
 //collar
 fill(0,0,0);
 rect(140,330,215,17);
 }
 
+void mouseClicked(){
+  int x = mouseX;
+  int y = mouseY;
+  System.out.println(x);
+  System.out.println(y);
+
+}
